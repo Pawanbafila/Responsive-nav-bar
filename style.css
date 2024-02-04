@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.background {
+  position: fixed;
+  background-image: url(pexels-creative-vix-9754.jpg);
+  filter: blur(4px);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: -1;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: #1d3036;
+}
+
+nav {
+  margin: 0 auto;
+  width: 85vw;
+  height: 20vh;
+
+}
+
+nav .baricon{
+
+  font-size: 26px;
+  color: white; padding: 18px 20px;
+   display: none;
+}
+
+
+
+nav .logo {
+  float: left;
+  padding: 1rem 0rem;
+  font-size: 1.3rem;
+  color: white;
+}
+
+nav ul {
+  float: right;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  margin: 0px;
+  float: left;
+  padding: 1.25rem;
+
+}
+
+nav ul li a:hover {
+  background-color: #315662;
+}
+
+.active {
+  background-color: #315662;
+}
+
+
+
+/*
+ * here start sidenav
+ */
+
+.sidenav{
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  background-color: #c1d0f53f;
+  backdrop-filter:blur(5px);
+  z-index: 1;
+  top: 0;
+  right: 0;
+  
+}
+.sidenav ul {
+  list-style: none;
+}
+.sidenav ul li a{
+  float: left;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 30px 100px;
+}
+.sidenav ul .cross{
+  font-size: 26px;
+  color: rgb(0, 0, 0);
+  padding: 20px 50px;
+}
+.sidenav ul li a:hover{
+background-color:rgba(156, 150, 150, 0.244) ;
+}
+
+.sidenav .active{
+  background-color: rgba(156, 150, 150, 0.244);
+}
+
+
+
+
+
+
+/*
+ * here start form css 
+ */
+
+.mainform {
+
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
+  width: 500px;
+  height: 600px;
+  margin: 10% auto;
+  background-color: #31566230
+}
+
+.form {
+  height: 600px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.form h1 {
+  text-align: center;
+  padding: 30px 0 30px 0;
+}
+
+.fgroup2 input {
+  width: 85%;
+  height: 30px;
+  padding: 10px;
+  margin: 10px 5px 10px 35px;
+  border-radius: 10px;
+  border: none;
+
+
+}
+
+.in1 input {
+  width: 42.5%;
+  height: 30px;
+  padding: 10px;
+  margin-left: 35px;
+  margin-right: 5px;
+  border-radius: 10px;
+  border: none;
+}
+
+.in2 input {
+  width: 40%;
+  height: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+
+}
+
+.secgroup input {
+  margin: 12px 0 0 35px;
+}
+
+.submit {
+  color: white;
+  background-color: rgb(64, 94, 185);
+  font-weight: bold;
+  width: 85%;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+
+}
+
+.secgroup label {
+  font-size: 13.5px;
+  color: rgb(255, 255, 255);
+}
+
+input {
+  cursor: pointer;
+  background-color: rgb(230, 230, 230);
+}
+
+.fgroup1 input:hover,
+.fgroup2 input:hover {
+  border-bottom: 2px solid rgb(111, 104, 104);
+}
+
+.secgroup input:active {
+  background-color: darkblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * here start reponsive 
+ */
+
+@media (max-width: 800px) {
+
+ nav .baricon {
+    display: block;
+    
+  }
+  .nav1{
+    display: none;
+  }
+  nav{
+    width: 100%;
+    margin: 0;
+    
+  }
+  nav .logo{
+    padding: 18px 20px;
+  }
+  
+}
+@media (max-width: 400px) {
+  .sidenav{
+    width: 100%;
+  }
+  
+}

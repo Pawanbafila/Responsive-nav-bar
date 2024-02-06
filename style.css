@@ -77,7 +77,9 @@ nav ul li a:hover {
   background-color: #315662;
 }
 
-
+.baricon:hover{
+  background-color: rgba(255, 255, 255, 0.118);
+}
 
 /*
  * here start sidenav
@@ -99,10 +101,16 @@ nav ul li a:hover {
   list-style: none;
 }
 .sidenav ul li a{
+  text-align: center;
+  font-size: 20px;
+  width: 300px;
+  height: 50px;
   float: left;
   color: rgb(0, 0, 0);
   text-decoration: none;
-  padding: 30px 100px;
+  padding: 15px;
+
+  
 }
 .sidenav ul .cross{
   font-size: 26px;
@@ -110,13 +118,15 @@ nav ul li a:hover {
   padding: 20px 50px;
 }
 .sidenav ul li a:hover{
-background-color:rgba(156, 150, 150, 0.244) ;
+background-color:rgba(130, 115, 115, 0.244) ;
 }
 
 .sidenav .active{
-  background-color: rgba(156, 150, 150, 0.244);
+  background-color: rgba(130, 115, 115, 0.244);
 }
-
+.sidenav .cross:hover{
+  background-color: rgba(255, 255, 255, 0.47);
+}
 
 
 
